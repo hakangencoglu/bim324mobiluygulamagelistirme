@@ -1,16 +1,17 @@
-import 'package:bim324mobiluygulamagelistirme/H3_1.dart';
-import 'package:bim324mobiluygulamagelistirme/H4StatelessWidget.dart';
 import 'package:flutter/material.dart';
-
 import 'H4StatefulWidget.dart';
+import 'SayfaBir.dart';
+import 'SayfaIki.dart';
+
+//import 'Deneme2.dart';
+
+//import 'Deneme.dart';
 
 void main() {
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -35,11 +36,22 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      //home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      home: H4StatefulWidget(),
+      //home: Deneme(),
+      //home: const MyHomePage(title: 'Ana sayfa'),
+      //home: Deneme2(),
+      //home: H4StatelessWidget(),
+      //home: H4StatefulWidget(),
+      //home: SayfaBir(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => SayfaBir(),
+        '/iki': (context) => SayfaIki(),
+      },
+
     );
   }
 }
+
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
