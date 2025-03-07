@@ -3,6 +3,7 @@ import 'package:bim324mobiluygulamagelistirme/H4StatelessWidget.dart';
 import 'package:flutter/material.dart';
 
 import 'H4StatefulWidget.dart';
+import 'LoginPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,7 +37,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       //home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      home: H4StatefulWidget(),
+      //home: H4StatefulWidget(),
+      home: LoginPage(),
     );
   }
 }
