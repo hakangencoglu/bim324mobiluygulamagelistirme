@@ -1,33 +1,22 @@
 import 'package:flutter/material.dart';
-import 'H4StatefulWidget.dart';
-import 'SayfaBir.dart';
-import 'SayfaIki.dart';
-
-//import 'Deneme2.dart';
-
-//import 'Deneme.dart';
+import 'package:provider/provider.dart';
 
 import 'ResimGoster.dart';
 import 'ResimSaglayici.dart';
+
 void main() {
-
-
-  //
   runApp(
-  //const MyApp()
-
-  ChangeNotifierProvider(
-  create: (context) => ResimSaglayici(),
-  child: MyApp(),
-  ) as Widget,
-
+    //const MyApp());
+    ChangeNotifierProvider(
+      create: (context) => ResimGoster(),
+      child: MyApp(),
+    ),
   );
 }
 
-class ChangeNotifierProvider {
-}
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -52,22 +41,11 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      //home: Deneme(),
-      //home: const MyHomePage(title: 'Ana sayfa'),
-      //home: Deneme2(),
-      //home: H4StatelessWidget(),
-      //home: H4StatefulWidget(),
-      //home: SayfaBir(),
-      initialRoute: '/',
-      routes: {
-        '/': (context) => SayfaBir(),
-        '/iki': (context) => SayfaIki(),
-      },
-
+      //home: const GirisSayfasi(),
+      home: ResimGoster(),
     );
   }
 }
-
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
