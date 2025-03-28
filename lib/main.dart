@@ -9,23 +9,45 @@ import 'SayfaIki.dart';
 
 import 'ResimGoster.dart';
 import 'ResimSaglayici.dart';
+import 'package:provider/provider.dart';
+import 'package:http/http.dart' as http;
+
 void main() {
-
-
-  //
   runApp(
-  //const MyApp()
-
-  ChangeNotifierProvider(
-  create: (context) => ResimSaglayici(),
-  child: MyApp(),
-  ) as Widget,
-
+    ChangeNotifierProvider(
+      create: (context) => ResimSaglayici(),
+      child: MyApp(),
+    ),
   );
 }
+/*
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: Text("API Test")),
+        body: Center(
+          child: ElevatedButton(
+            onPressed: () async {
+              final uri = Uri.parse('https://picsum.photos/200/300');
+              final response = await http.get(uri);
 
-class ChangeNotifierProvider {
+              if (response.statusCode == 200) {
+                print("Bağlantı başarılı");
+              } else {
+                print("Bağlantı hatası: ${response.statusCode}");
+              }
+            },
+            child: Text("API Testi Yap"),
+          ),
+        ),
+      ),
+    );
+  }
 }
+*/
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   // This widget is the root of your application.
@@ -58,11 +80,12 @@ class MyApp extends StatelessWidget {
       //home: H4StatelessWidget(),
       //home: H4StatefulWidget(),
       //home: SayfaBir(),
-      initialRoute: '/',
+      /*initialRoute: '/',
       routes: {
         '/': (context) => SayfaBir(),
         '/iki': (context) => SayfaIki(),
-      },
+      },*/
+      home: ResimGoster(),
 
     );
   }
