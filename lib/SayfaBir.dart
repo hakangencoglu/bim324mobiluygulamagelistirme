@@ -1,3 +1,4 @@
+import 'package:bim324mobiluygulamagelistirme/AppDrawer.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +11,9 @@ class SayfaBir extends StatelessWidget{
       appBar: AppBar(
         title: Text("Navigasyon Örneği"),
       ) ,
-      drawer: Drawer(
+      drawer: const AppDrawer(),
+          /*
+      Drawer(
         child:
         ListView(
           children: [
@@ -39,6 +42,7 @@ class SayfaBir extends StatelessWidget{
           ],
         ),
       ),
+      */
 
 
       body:
