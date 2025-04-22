@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 import 'Note.dart';
 import 'DatabaseHelper.dart';
 
@@ -141,3 +141,4 @@ class NotlarState extends State<Notlar> {
     );
   }
 }
+*/

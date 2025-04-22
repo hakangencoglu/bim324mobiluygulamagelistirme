@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'Notlar.dart';
+import 'NotlarArayuz.dart';
 import 'SharedPrefer.dart';
 import 'H4StatefulWidget.dart';
 import 'OgrenciListesi.dart';
@@ -82,7 +83,7 @@ class _MyAppState extends State<MyApp> {
           karanlikMod: _karanlikMod, // alt widget'a tema bilgisi gönder
           onTemaDegisti: _karanlikModuDegistir, // tema değişim fonksiyonu
         ),
-        '/notlar': (context) => Notlar(),
+        '/notlar': (context) => NotelarArayuz(),
 
       },
 
