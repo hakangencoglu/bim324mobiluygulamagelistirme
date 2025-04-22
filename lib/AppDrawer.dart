@@ -33,6 +33,10 @@ class AppDrawer extends StatelessWidget {
             title: const Text('Çıkış yap'),
             onTap: () => Navigator.pushReplacementNamed(context, '/login'),
           ),
+          ListTile(
+            title: const Text('Çıkış yap'),
+            onTap: () => Navigator.pushReplacementNamed(context, '/notlar'),
+          ),
         ],
       ),
     );

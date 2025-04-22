@@ -1,9 +1,9 @@
 class Ogrenci {
   int id;  String ad;  int yas;
   Ogrenci({required this.id, required this.ad, required this.yas});
-  factory Ogrenci.fromJson(Map<String, dynamic> json) {
+  factory Ogrenci.fromJson(Map<String, dynamic> veri) {
     return Ogrenci(
-      id: json['id'],      ad: json['ad'],      yas: json['yas'],
+      id: veri['id'],      ad: veri['ad'],      yas: veri['yas'],
     );
   }
   Map<String, dynamic> toJson() {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Notlar.dart';
 import 'SharedPrefer.dart';
 import 'H4StatefulWidget.dart';
 import 'OgrenciListesi.dart';
@@ -21,7 +22,6 @@ class MyApp extends StatefulWidget {
   @override
   State<MyApp> createState() => _MyAppState();
 }
-
 class _MyAppState extends State<MyApp> {
 //class MyApp extends StatelessWidget {
   //const MyApp({super.key});
@@ -73,7 +73,7 @@ class _MyAppState extends State<MyApp> {
       //home: H4StatefulWidget(),
       //home: SayfaBir(),
 
-      initialRoute: '/',
+      initialRoute: '/notlar',
       routes: {
         '/': (context) => SayfaBir(),
         '/iki': (context) => SayfaIki(),
@@ -82,6 +82,8 @@ class _MyAppState extends State<MyApp> {
           karanlikMod: _karanlikMod, // alt widget'a tema bilgisi gönder
           onTemaDegisti: _karanlikModuDegistir, // tema değişim fonksiyonu
         ),
+        '/notlar': (context) => Notlar(),
+
       },
 
     );
