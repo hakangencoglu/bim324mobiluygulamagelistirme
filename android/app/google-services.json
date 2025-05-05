@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "712231955325",
+    "project_id": "mobiluygulamagelistirme-d5421",
+    "storage_bucket": "mobiluygulamagelistirme-d5421.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712231955325:android:6223091b1b669eefe97a14",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpH5DFJsxeOcs8-s1CbGfxXft1VG_6J-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712231955325:android:0093fad0481b2797e97a14",
+        "android_client_info": {
+          "package_name": "com.example.flutterfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpH5DFJsxeOcs8-s1CbGfxXft1VG_6J-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
