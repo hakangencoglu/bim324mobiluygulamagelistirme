@@ -42,6 +42,25 @@
           "other_platform_oauth_client": []
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712231955325:android:2413de7f13b84e83e97a14",
+        "android_client_info": {
+          "package_name": "mdbf.mug.bim324mobiluygulamagelistirme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpH5DFJsxeOcs8-s1CbGfxXft1VG_6J-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
     }
   ],
   "configuration_version": "1"

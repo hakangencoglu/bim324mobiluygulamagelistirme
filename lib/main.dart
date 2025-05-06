@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'LoginIslemleri/GirisModel.dart';
 import 'LoginIslemleri/GirisServis.dart';
+import 'LoginIslemleri/firebase_options.dart';
 import 'Notlar.dart';
 import 'NotlarArayuz.dart';
 import 'SharedPrefer.dart';
@@ -33,7 +34,10 @@ class MyApp extends StatefulWidget {
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  //await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(MyApp());
 }
 
