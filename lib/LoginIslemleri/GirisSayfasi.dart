@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../CustomAppBar.dart';
 import 'GirisServis.dart';
 
 class GirisSayfasi extends StatefulWidget {
@@ -59,9 +60,7 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(_isLogin ? 'Giriş Yap' : 'Kayıt Ol'),
-      ),
+      appBar: CustomAppBar(title: _isLogin ? 'Giriş Yap' : 'Kayıt Ol'),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Form(
