@@ -39,8 +39,13 @@ dependencies:
   firebase_storage: ^12.4.5      # Dosya yükleme
   firebase_messaging: ^15.2.5    # Push bildirim
   provider: ^6.1.1
+  flutter_svg: ^2.0.7
   # shared preferences örneği için
   shared_preferences: ^2.2.2
+  # UUID (Universally Unique Identifier) paketi:
+  # Her kullanıcıya veya dosyaya benzersiz bir ID üretmek için kullanılır.
+  # Bu, örneğin profil resimlerinin isimlerinin çakışmaması için gereklidir.
+  uuid: ^4.2.2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -69,6 +74,7 @@ dev_dependencies:
 flutter:
   assets:
     - assets/ogrenciler.json
+    - assets/default_avatar.png
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
